@@ -7,8 +7,8 @@
     "testing"
   ],
   "homepage": "https://github.com/leafac/fake-avatars",
+  "repository": "https://github.com/leafac/fake-avatars",
   "bugs": "https://github.com/leafac/fake-avatars/issues",
-  "repository": "leafac/fake-avatars",
   "funding": [
     "https://patreon.com/leafac",
     "https://paypal.me/LeandroFacchinettiEU",
