@@ -18,7 +18,6 @@
   "author": "Leandro Facchinetti <fake-avatars@leafac.com> (https://leafac.com)",
   "license": "MIT",
   "devDependencies": {
-    "fs-extra": "^10.1.0",
     "sharp": "^0.31.1"
   }
 }
