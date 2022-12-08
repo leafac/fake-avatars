@@ -7,7 +7,8 @@ const destinationPath = process.argv[3];
 
 await fs.mkdir(destinationPath, { recursive: true });
 const originals = await fs.readdir(originalsPath);
-for (let index = 0; index < originals.length; index++)
+
+for (const index of originals.keys())
   await sharp(path.join(originalsPath, originals[index]), {
     limitInputPixels: false,
   })
@@ -18,3 +19,8 @@ for (let index = 0; index < originals.length; index++)
       position: sharp.strategy.attention,
     })
     .toFile(path.join(destinationPath, `${index}.png`));
+
+for (const index of originals.keys())
+  await sharp(path.join(destinationPath, `${index}.png`), {
+    limitInputPixels: false,
+  }).toFile(path.join(destinationPath, `${index}.webp`));
